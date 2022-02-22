@@ -104,7 +104,7 @@ Technologies to be used:
 * Docker containers
 * Python
 * InfluxDB (Time series database)
-* Grafana
+* Grafana  (Open source Data visualization web tool)
 
 
 ====
