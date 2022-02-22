@@ -85,7 +85,14 @@ For this project I will use weather data, specifically Multi-Site Air-Quality Da
 == Project layout
 
 
+The platform is going to have 2 parts:app-name:
 
+* Ingestion of the CSV files
+* Ingestion of the API jason files
+
+
+
+image::https://user-images.githubusercontent.com/63274055/155139250-784659fa-c228-4338-869d-54fd58aa3f3c.png[width=600]
 
 
 
