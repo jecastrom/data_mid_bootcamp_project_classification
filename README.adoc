@@ -92,7 +92,7 @@ The platform is going to have 2 parts:app-name:
 
 
 
-image::https://user-images.githubusercontent.com/63274055/155139250-784659fa-c228-4338-869d-54fd58aa3f3c.png[width=600]
+image::https://user-images.githubusercontent.com/63274055/155139250-784659fa-c228-4338-869d-54fd58aa3f3c.png[width=800]
 
 
 
