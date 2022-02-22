@@ -96,15 +96,15 @@ image::https://user-images.githubusercontent.com/63274055/155139250-784659fa-c22
 
 
 
-
-
-
-
-
 ====
 ''''
 ====
+Technologies to be used:
 
+* Docker containers
+* Python
+* InfluxDB (Time series database)
+* Tableau or Grafana
 
 
 ====
