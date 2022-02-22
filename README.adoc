@@ -67,7 +67,7 @@ toc::[]
 = ETL Pipeline Project
 == Objective
 
-Build a platform to handle data that is time-based such as measurements from IoT devices, store them on a database and visualize it on a dashboard.
+Build a platform to handle time series data (metrics and events) from IoT devices, store them on a database and visualize it on a dashboard.
 
 == Data Sources
 
