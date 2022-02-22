@@ -1,0 +1,170 @@
+= Data Mid-Bootcamp Project
+:stylesheet: boot-darkly.css
+:linkcss: boot-darkly.css
+:image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
+:my-name: Jorge Castro DAPT NOV2021
+:description:
+//:fn-xxx: Add the explanation foot note here bla bla
+:toc:
+:toc-title: 
+:toc-placement!:
+:toclevels: 5
+ifdef::env-github[]
+:sectnums:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:experimental:
+:table-caption!:
+:example-caption!:
+:figure-caption!:
+:idprefix:
+:idseparator: -
+:linkattrs:
+:fontawesome-ref: http://fortawesome.github.io/Font-Awesome
+:icon-inline: {user-ref}/#inline-icons
+:icon-attribute: {user-ref}/#size-rotate-and-flip
+:video-ref: {user-ref}/#video
+:checklist-ref: {user-ref}/#checklists
+:list-marker: {user-ref}/#custom-markers
+:list-number: {user-ref}/#numbering-styles
+:imagesdir-ref: {user-ref}/#imagesdir
+:image-attributes: {user-ref}/#put-images-in-their-place
+:toc-ref: {user-ref}/#table-of-contents
+:para-ref: {user-ref}/#paragraph
+:literal-ref: {user-ref}/#literal-text-and-blocks
+:admon-ref: {user-ref}/#admonition
+:bold-ref: {user-ref}/#bold-and-italic
+:quote-ref: {user-ref}/#quotation-marks-and-apostrophes
+:sub-ref: {user-ref}/#subscript-and-superscript
+:mono-ref: {user-ref}/#monospace
+:css-ref: {user-ref}/#custom-styling-with-attributes
+:pass-ref: {user-ref}/#passthrough-macros
+endif::[]
+ifndef::env-github[]
+:imagesdir: ./
+endif::[]
+
+image::{image-url-ironhack}[width=70]
+
+{my-name}
+
+
+                                                     
+====
+''''
+====
+toc::[]
+
+{description}
+
+
+= ETL Pipeline Project
+== Objective
+
+Build a platform to handle data that is time-based such as measurements from IoT devices, store them on a database and visualize it on a dashboard
+
+
+`*_Answer:_*`
+
+
+
+====
+''''
+====
+
+
+
+====
+''''
+====
+
+{script-url}[Solutions script only]
+
+====
+''''
+====
+
+
+
+
+xref:Lab-xxxx[Top Section]
+
+xref:Last-section[Bottom section]
+
+//bla bla blafootnote:[{fn-xxx}]
+
+
+////
+.Unordered list title
+* gagagagagaga
+** gagagatrtrtrzezeze
+*** zreu fhjdf hdrfj 
+*** hfbvbbvtrtrttrhc
+* rtez uezrue rjek  
+
+.Ordered list title
+. rwieuzr skjdhf
+.. weurthg kjhfdsk skhjdgf
+. djhfgsk skjdhfgs 
+.. lksjhfgkls ljdfhgkd
+... kjhfks sldfkjsdlk
+
+
+
+
+[,sql]
+----
+----
+
+
+
+[NOTE]
+====
+A sample note admonition.
+====
+ 
+TIP: It works!
+ 
+IMPORTANT: Asciidoctor is awesome, don't forget!
+ 
+CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
+ 
+WARNING: You have no reason not to use Asciidoctor.
+
+bla bla bla the 1NF or first normal form.footnote:[{1nf}]Then wen bla bla
+
+
+====
+- [*] checked
+- [x] also checked
+- [ ] not checked
+-     normal list item
+====
+[horizontal]
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+
+
+
+
+
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+
+////
