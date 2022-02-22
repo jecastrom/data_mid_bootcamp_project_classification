@@ -6,6 +6,7 @@
 :description:
 //:fn-xxx: Add the explanation foot note here bla bla
 :url-dataset: https://www.kaggle.com/sid321axn/beijing-multisite-airquality-data-set
+:url-dataset2: https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 :url-api: https://www.weatherapi.com/docs/
 :toc:
 :toc-title: 
@@ -74,6 +75,8 @@ For this project I will use weather data, specifically Multi-Site Air-Quality Da
 
 === Data set for historical data
 {url-dataset}[Beijing Multi-Site Air-Quality Data Set (CSV files)]
+
+{url-dataset2}[Beijing Multi-Site Air-Quality Data Set from the Machine Learning Repository]
 
 === External API for real-time data
 
