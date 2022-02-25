@@ -64,7 +64,8 @@ toc::[]
 {description}
 
 
-= ETL Pipeline Project
+= Build and deploy a Data Ingestion Pipeline Pull
+
 == Objective
 
 Build a platform to handle time series data (metrics and events) from IoT devices, store them on a database and visualize it on a dashboard.
@@ -87,7 +88,7 @@ For this project I will use weather data, specifically Multi-Site Air-Quality Da
 == Project layout
 
 
-The platform is going to have 2 parts:app-name:
+The platform is going to have 2 parts:
 
 * Ingestion of the CSV files
 * Ingestion of the API json files
@@ -103,8 +104,8 @@ image::https://user-images.githubusercontent.com/63274055/155151785-33485885-489
 ====
 Technologies to be used:
 
-* Docker containers
 * Python
+* Docker containers
 * InfluxDB (Time series database)
 * Grafana  (Open source Data visualization web tool)
 
