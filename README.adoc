@@ -152,7 +152,7 @@ image::https://user-images.githubusercontent.com/63274055/155846581-3e8dd67a-194
 . the InfluxDB database 
 
 .  Finlay the steps 4 and 5 repeat as in Part I.
-.   ss
+
 
 
 
