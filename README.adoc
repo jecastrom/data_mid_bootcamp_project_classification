@@ -149,9 +149,13 @@ image::https://user-images.githubusercontent.com/63274055/155846581-3e8dd67a-194
 
 . and have a Python integration script which will query data from the Weather API and then write it to 
 
-. the InfluxDB database
+. the InfluxDB database 
 
 .  Finlay the steps 4 and 5 repeat as in Part I.
+.
+
+
+
 
 xref:Lab-xxxx[Top Section]
 
