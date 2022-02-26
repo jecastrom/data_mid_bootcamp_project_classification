@@ -9,6 +9,7 @@
 :url-dataset2: https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 :url-api: https://www.weatherapi.com/docs/
 :url-influx: https://www.influxdata.com
+:url-grafana: https://grafana.com/
 :toc:
 :toc-title: 
 :toc-placement!:
@@ -95,8 +96,8 @@ Technologies to be used:
 * AWS EC2 linux instance
 * Python
 * Docker containers
-**{url-influx}[InfluxDB (Time series database)]
-** Grafana  (Open source Data visualization web tool)
+** {url-influx}[InfluxDB (Open source Time series database)]
+** {url-grafana}[Grafana (Open source Data visualization web tool)]
 
 
 ====
