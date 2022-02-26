@@ -106,17 +106,19 @@ Technologies to be used:
 
 * Python
 * Docker containers
-* InfluxDB (Time series database)
-* Grafana  (Open source Data visualization web tool)
+** InfluxDB (Time series database)
+** Grafana  (Open source Data visualization web tool)
 
 
 ====
 ''''
 ====
 
-== How the final product will look
+== How the final product is going to look like
 
+The first part is the database storing the data. For this I will be using InfluxDB which is a time series database and better suited to handle this type of data without too much overhead.
 
+image::https://user-images.githubusercontent.com/63274055/155841851-0e80a26f-431e-45a7-88f2-113ae0598fbf.gif[width=800]
 
 
 ====
