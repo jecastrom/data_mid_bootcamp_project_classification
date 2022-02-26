@@ -85,25 +85,13 @@ For this project I will use weather data, specifically Multi-Site Air-Quality Da
 
 {url-api}[Weather API]
 
-== Project layout
-
-
-The platform is going to have 2 parts:
-
-* Ingestion of the CSV files
-* Ingestion of the API json files
-
-
-
-image::https://user-images.githubusercontent.com/63274055/155151785-33485885-489d-4d9e-8d0a-f0074ccaf805.png[width=800]
-
-
 
 ====
 ''''
 ====
 Technologies to be used:
 
+* AWS EC2 linux instance
 * Python
 * Docker containers
 ** InfluxDB (Time series database)
@@ -118,6 +106,8 @@ Technologies to be used:
 
 The first part is the database storing the data. For this I will be using InfluxDB which is a time series database and better suited to handle this type of data without too much overhead.
 
+In InfluxDB we can build queries and visualize them there on an integrated graphical interface. However I will not be using InfluxDB to visualize the data as we cannot allow the stakeholders that will be consuming this data to have direct access to the database. 
+
 image::https://user-images.githubusercontent.com/63274055/155841851-0e80a26f-431e-45a7-88f2-113ae0598fbf.gif[width=800]
 
 
@@ -125,6 +115,17 @@ image::https://user-images.githubusercontent.com/63274055/155841851-0e80a26f-431
 ''''
 ====
 
+== What I am going to build
+
+
+The platform is going to have 2 parts:
+
+* Ingestion of the CSV files
+* Ingestion of the API json files
+
+
+
+image::https://user-images.githubusercontent.com/63274055/155151785-33485885-489d-4d9e-8d0a-f0074ccaf805.png[width=800]
 
 
 
