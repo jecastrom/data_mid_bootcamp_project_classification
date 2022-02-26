@@ -152,7 +152,75 @@ image::https://user-images.githubusercontent.com/63274055/155846581-3e8dd67a-194
 . the InfluxDB database 
 
 .  Finlay the steps 4 and 5 repeat as in Part I.
+sasasaa
 
+== Building Part I, steps 1, 2 and 3 (Inserting data to the database from csv dataset)
+
+```python
+import pandas as pd
+from numpy import float64
+import datetime as dt
+
+# Import the new influxdb API client
+import influxdb_client
+from influxdb_client.client.write_api import SYNCHRONOUS
+
+df = pd.read_csv("data/PRSA_Data_Aotizhongxin_20130301-20170228.csv", )
+
+# As there is no timestamp on the dataset, only 4 separate column
+# I am creating a timestamp out of the four columns
+# needed for influx 2020-01-01T00:00:00.00Z
+# lambda s : dt.datetime(*s) takes every row and convert them -> *s
+# strftime to reformat the string into influxdb timestamp format
+df['TimeStamp'] = df[['year', 'month', 'day', 'hour']].apply(
+    lambda s: dt.datetime(*s).strftime('%Y-%m-%dT%H:%M:%SZ'), axis=1)
+
+# setting the timestamp as the index of the dataframe
+df.set_index('TimeStamp', inplace=True)
+# dropping the year, month, day, hour, No from the dataframe
+converted_ts = df.drop(['year', 'month', 'day', 'hour', 'No'], axis=1)
+print(converted_ts)
+
+# Changing the column types to float
+ex_df = converted_ts.astype({"PM2.5": float64,
+                             "PM10": float64,
+                             "SO2": float64,
+                             "NO2": float64,
+                             "CO": float64,
+                             "O3": float64,
+                             "TEMP": float64,
+                             "PRES": float64,
+                             "DEWP": float64,
+                             "RAIN": float64,
+                             "WSPM": float64})
+
+
+# Defining tag fields
+datatags = ['station', 'wd']
+
+
+client = influxdb_client.InfluxDBClient(
+    url='http://localhost:8086',
+    token='L4-rOr-5BNyYrpHYsgUmGmRUMl1wFfyOjBmFpBjgl9tSjUOn0hFsfEfdDVx1YfDiaebEzWJtif8PvwT24-QcNg==',
+    org='my-org'
+)
+
+# Writing the data with two tags
+write_api = client.write_api(write_options=SYNCHRONOUS)
+message = write_api.write(bucket='air-quality', org='my-org', record=ex_df,
+                          data_frame_measurement_name='full-tags', data_frame_tag_columns=['station', 'wd'])
+print(message)
+
+write_api.flush()
+
+# Writing the data only with one tag
+write_api = client.write_api(write_options=SYNCHRONOUS)
+message = write_api.write(bucket='air-quality', org='my-org', record=ex_df,
+                          data_frame_measurement_name='location-tag-only', data_frame_tag_columns=['station'])
+print(message)
+
+write_api.flush()
+```
 
 
 
@@ -180,7 +248,7 @@ xref:Last-section[Bottom section]
 ... kjhfks sldfkjsdlk
 
 
-
+sdsdsd
 
 [,sql]
 ----
