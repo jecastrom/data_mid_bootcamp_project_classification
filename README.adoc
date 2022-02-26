@@ -129,7 +129,7 @@ The platform is going to have 2 parts:
 
 
 
-image::https://user-images.githubusercontent.com/63274055/155151785-33485885-489d-4d9e-8d0a-f0074ccaf805.png[width=800]
+image::https://user-images.githubusercontent.com/63274055/155846455-cc7f9b4a-0a2c-439e-a323-297d4506a06b.png[width=800]
 
 * Part I:
 
