@@ -261,7 +261,7 @@ print(message)
 write_api.flush()
 ```
 
-..
+.
 
 
 xref:Lab-xxxx[Top Section]
