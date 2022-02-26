@@ -8,6 +8,7 @@
 :url-dataset: https://www.kaggle.com/sid321axn/beijing-multisite-airquality-data-set
 :url-dataset2: https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 :url-api: https://www.weatherapi.com/docs/
+:url-influx: https://www.influxdata.com
 :toc:
 :toc-title: 
 :toc-placement!:
@@ -94,7 +95,7 @@ Technologies to be used:
 * AWS EC2 linux instance
 * Python
 * Docker containers
-** InfluxDB (Time series database)
+**{url-influx}[InfluxDB (Time series database)]
 ** Grafana  (Open source Data visualization web tool)
 
 
@@ -110,7 +111,9 @@ In InfluxDB we can build queries and visualize them there on an integrated graph
 
 image::https://user-images.githubusercontent.com/63274055/155841851-0e80a26f-431e-45a7-88f2-113ae0598fbf.gif[width=800]
 
+The to visualize..   
 
+image::https://user-images.githubusercontent.com/63274055/155844751-1c5013fc-8563-4f43-8605-a1ccb916cb6d.png[width=800]
 ====
 ''''
 ====
@@ -128,6 +131,15 @@ The platform is going to have 2 parts:
 image::https://user-images.githubusercontent.com/63274055/155151785-33485885-489d-4d9e-8d0a-f0074ccaf805.png[width=800]
 
 
+1.- CSV files to be worked on which are the time series dataset
+
+2.- Then I am going to create a Python ingestion program. This program is going to take the csv file,
+
+3.- and is going to write it into the InfluxDB database, hosted as a Docker container. Once the data is in InfluxDB, (where the data and aggregations are stored) 
+
+4.- then I can set up a dashboard in Grafana, also hosted in a Docker container and query the data from InfluxDB
+
+5.- The "Client" is the pc of the stakeholders from which the Grafana UI will be accessed to the AWS EC2 instance with an URL
 
 xref:Lab-xxxx[Top Section]
 
