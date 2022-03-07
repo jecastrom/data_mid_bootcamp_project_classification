@@ -877,7 +877,7 @@ image::https://user-images.githubusercontent.com/63274055/156604024-c2858d12-2aa
 
 == The final Data Pipeline (Animated schema)
 
-https://youtu.be/_W1JlKVM8dY[Animation of the Data Pipeline (Video)]
+https://youtu.be/VVKKyVp-L88[Animation of the Data Pipeline (Video)]
 
 
 
