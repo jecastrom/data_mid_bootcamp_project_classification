@@ -356,12 +356,21 @@ docker ps
 
 image::https://user-images.githubusercontent.com/63274055/155902967-f700133d-1d89-4eeb-a806-15be535441fa.png[width=800]
 
-* On the EC2 terminal, I had to install the InfluxDB Python client library
+== Installing the necessary Python libraries on EC2 virtual environment
 
-```bash
-pip install influxdb-client
-```
-* Setting up InfluxDB 
+* On the EC2 terminal, within the Python virtual environment folder, I had to install the Python libraries needed to run the pipeline:
+
+* InfluxDB Python client
+* Requests
+* Pandas
+* Numpy
+* Schedule
+
+====
+''''
+====
+
+== Setting up InfluxDB 
 
 Created a token in InfluxDB so I was able to write data into the database from the python client.
 
