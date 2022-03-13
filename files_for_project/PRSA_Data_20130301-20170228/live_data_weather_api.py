@@ -138,7 +138,7 @@ print(ex_df)
 
 # Setting up Database (Connection string) using the InfluxDB client
 client = influxdb_client.InfluxDBClient(
-    url='ec2-35-157-40-78.eu-central-1.compute.amazonaws.com:8086',
+    url='ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:8086',
     token='kp_gJV8Y7aOZB0odriHj1o_qWurQmxzBXpTU_kYY4JnQ88e9X1TI3ifFVA1pUyGZshZfTpeaTlTWgYAUESTMvw==',
     org='my-org'
 )
