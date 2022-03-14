@@ -358,11 +358,9 @@ docker ps
 
 image::https://user-images.githubusercontent.com/63274055/155902967-f700133d-1d89-4eeb-a806-15be535441fa.png[width=800]
 
-Now, I want to be able to share this project with my teacher, so they can see the result. The actual front end of this data 
-pipeline is going to be the Grafana dashboards.
+Now, I want to be able to share this project with my teacher, so they can see the result. The actual front end of this data pipeline is going to be the Grafana dashboards.
 
-Grafana can be very strong in authentication, they have basic authentication, we can set users, passwords and roles of viewer, editor or admin. They do not have built in 2FA
-but we can enable OAuth2 authentication from several identity providers:
+Grafana can be very strong in authentication, they have basic authentication, we can set users, passwords and roles of viewer, editor or admin. They do not have built in 2FA but we can enable OAuth2 authentication from several identity providers:
 
 * Azure AD  
 * GitHub  
@@ -370,8 +368,17 @@ but we can enable OAuth2 authentication from several identity providers:
 
 to name a few.  
 
-However I wanted some dashboards to have public access, just a link so they can be viewed. Grafana of course has a built in user
-authentication system with password authentication enabled by default.
+However I wanted some dashboards to have public access, just a link so they can be viewed. Grafana of course has a built in user authentication system with password authentication enabled by default.
+
+We can disable authentication by enabling anonymous access. So I found a way to setup Grafana so I did not expose the entire server to be accessed anonymously.
+
+. I created a second Grafana Org called "Public Org." with the anonymous authentication settings recommended on the Grafana docs. This Public Org has a "viewer" role.
+
+. Then created the admin account for the default Org called Main Org which we do not need to name specifically on the docker compose file.
+
+So the final docker compose yml file looks like so:
+
+
 
 
 == Installing the necessary Python libraries on EC2 virtual environment
