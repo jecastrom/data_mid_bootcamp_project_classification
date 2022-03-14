@@ -380,7 +380,43 @@ We can disable authentication by enabling anonymous access. So I found a way to 
 
 So the final docker compose yml file looks like so:
 
-
+```yml
+version: '2'
+services:
+  influxdb:
+    image: influxdb:2.0
+    ports:
+      - '8086:8086' 
+    volumes:
+      - ./data:/var/lib/influxdb2
+      - ./config:/etc/influxdb2
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=my-user
+      - DOCKER_INFLUXDB_INIT_PASSWORD=my-password
+      - DOCKER_INFLUXDB_INIT_ORG=my-org 
+      - DOCKER_INFLUXDB_INIT_BUCKET=air-quality
+  grafana:
+    image: grafana/grafana:8.1.1-ubuntu
+    ports:
+      - '3000:3000'
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - INFLUXDB_DB=db0
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=pw12345
+      - INFLUXDB_ADMIN_USER_PASSWORD=admin
+      - INFLUXDB_USERNAME=user
+      - INFLUXDB_PASSWORD=user12345    
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_NAME=Public Org.
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
+      - GF_AUTH_ANONYMOUS_HIDE_VERSION=true 
+      
+    volumes:
+      - ./gfdata:/var/lib/grafana
+```
 
 
 == Installing the necessary Python libraries on EC2 virtual environment
