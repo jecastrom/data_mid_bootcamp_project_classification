@@ -6,6 +6,7 @@
 :description:
 //:fn-xxx: Add the explanation foot note here bla bla
 :url-dash-1: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/tJQ_x4Enk/historic-air-quality-data-beijin-aotizhongxin-all-metrics?orgId=1&from=1356994800000&to=1483225200000
+:url-dash-2: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/DTwNf4Pnk/air-quality-data-feed-every-hour-past-24h-all-metrics-berlin-germany?orgId=1&from=1647164343360&to=1647250743360
 :url-dataset: https://www.kaggle.com/sid321axn/beijing-multisite-airquality-data-set
 :url-dataset2: https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 :url-api: https://www.weatherapi.com/docs/
@@ -892,7 +893,7 @@ https://youtu.be/VVKKyVp-L88[Animation of the Data Pipeline (Video)]
 == Direct link to the Grafana dashboards hosted on the EC2 instance
 
 {url-dash-1}[Historic Air Quality Data from Beijin-Aotizhongxin, China - All metrics]
-
+{url-dash-2}[Air Quality Data Live Feed - All Metrics-  Berlin - Germany]
 
 
 xref:Data-Mid-Bootcamp-Project[Top Section]
