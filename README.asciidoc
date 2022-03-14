@@ -957,7 +957,7 @@ https://youtu.be/VVKKyVp-L88[Animation of the Data Pipeline (Video)]
 
 == Direct link to the Grafana dashboards hosted on the EC2 instance
 
-{url-dash-3}[Air Quality Postulants Concentration - Berlin]
+{url-dash-3}[Air Quality Pollutants Concentration - Berlin]
 
 {url-dash-1}[Historic Air Quality Data from Beijin-Aotizhongxin, China - All metrics]  
 
