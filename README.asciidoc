@@ -417,6 +417,9 @@ services:
     volumes:
       - ./gfdata:/var/lib/grafana
 ```
+This is the difference from the previous docker compose file I had out together:
+
+image::https://user-images.githubusercontent.com/63274055/158197834-2005997c-2044-4e11-8787-1ac1ceaef2c6.png[width=800]
 
 
 == Installing the necessary Python libraries on EC2 virtual environment
