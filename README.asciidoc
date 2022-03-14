@@ -295,11 +295,11 @@ source project-venv/bin/activate
 
 == Setting up the development environment (Docker containers for InfluxDB and Grafana)
 
-* In order to download the docker images and setup the  parameters I need (usernames and passwords), I created a Docker compose file (yml file)
+* In order to download the docker images and setup the  parameters I need (usernames, passwords and environment variables), I put together a  Docker compose file (yml file)
 
 * Before running the command `docker-compose up`, inside the folder to be used for the project I had to create a folder named *gfdata*, and set the folder permissions to 777. Otherwise, the deployment of the docker container of Grafana will fail.
 
-Having already uploaded the docker-compose.yml file, on the EC2 cloud9 terminal, from the folder we have created to have our dev environment, we run the following command:
+Having already uploaded the docker-compose.yml file, on the EC2 terminal, from the folder we have created to have our dev environment, we run the following command:
 
 ```
 docker-compose up
@@ -358,6 +358,22 @@ docker ps
 
 image::https://user-images.githubusercontent.com/63274055/155902967-f700133d-1d89-4eeb-a806-15be535441fa.png[width=800]
 
+Now, I want to be able to share this project with my teacher, so they can see the result. The actual front end of this data 
+pipeline is going to be the Grafana dashboards.
+
+Grafana can be very strong in authentication, they have basic authentication, we can set users, passwords and roles of viewer, editor or admin. They do not have built in 2FA
+but we can enable OAuth2 authentication from several identity providers:
+
+* Azure AD  
+* GitHub  
+* Google   
+
+to name a few.  
+
+However I wanted some dashboards to have public access, just a link so they can be viewed. Grafana of course has a built in user
+authentication system with password authentication enabled by default.
+
+
 == Installing the necessary Python libraries on EC2 virtual environment
 
 * On the EC2 terminal, within the Python virtual environment folder, I had to install the Python libraries needed to run the pipeline:
@@ -392,7 +408,7 @@ image::https://user-images.githubusercontent.com/63274055/156252197-e2730015-82f
 
 {url-insert}[Building Part I, steps 1, 2 and 3 Jupyter Notebook]
 
-
+////
 
 ```py
 import pandas as pd
@@ -497,7 +513,7 @@ print(message)
 ```py
 write_api.flush()
 ```
-
+////
 
 == Querying the data with Python
 
