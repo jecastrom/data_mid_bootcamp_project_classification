@@ -365,7 +365,7 @@ We can set a `restart policy` to control whether the containers start automatica
 
 To configure the restart policies of my two containers I used the `--restart` flag when using the `docker update` command (`docker update` is used for containers that are already running). I used the value `unless-stopped` which configures the container to always restart unless it is explicitly stopped or Docker is restarted.
 
-```docker
+```bash
 docker update --restart unless-stopped 7257a389cc72
 
 # 7257a389cc72 its the container ID
