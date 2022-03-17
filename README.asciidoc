@@ -359,6 +359,19 @@ docker ps
 
 image::https://user-images.githubusercontent.com/63274055/155902967-f700133d-1d89-4eeb-a806-15be535441fa.png[width=800]
 
+=== Start docker containers automatically
+
+We can set a `restart policy` to control whether the containers start automatically when they stop, or when we restart Docker. Also restart policies help that containers that are linked start in the correct order.
+
+To configure the restart policies of my two containers I used the `--restart` flag when using the `docker update` command (`docker update` is used for containers that are already running). I used the value `unless-stopped` which configures the container to always restart unless it is explicitly stopped or Docker is restarted.
+
+```docker
+docker update --restart unless-stopped 7257a389cc72
+
+# 7257a389cc72 its the container ID
+```
+
+
 == Public sharing of the Grafana dashboards for this project
 
 Now, I want to be able to share this project with my teacher, so they can see the result. The actual front end of this data pipeline is going to be the Grafana dashboards.
