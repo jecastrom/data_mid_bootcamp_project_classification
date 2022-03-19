@@ -470,7 +470,7 @@ image::https://user-images.githubusercontent.com/63274055/156252197-e2730015-82f
 
 {url-insert}[Building Part I, steps 1, 2 and 3 Jupyter Notebook]
 
-////
+
 
 ```py
 import pandas as pd
@@ -575,7 +575,7 @@ print(message)
 ```py
 write_api.flush()
 ```
-////
+
 
 == Querying the data with Python
 
