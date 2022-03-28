@@ -1,9 +1,9 @@
-= Data Mid-Bootcamp Project
+= Build and Deploy a Data Ingestion Pipeline (Pull)
 :stylesheet: boot-darkly.css
 :linkcss: boot-darkly.css
 :image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
 :my-name: Jorge Castro DAPT NOV2021
-:description: Build and deploy a Data Ingestion Pipeline (Pull)
+:description: 
 //:fn-xxx: Add the explanation foot note here bla bla
 :url-dash-3: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/HYlvKIEnz/air-pollutants-concentration-levels-hourly-last-24h-berlin-germany?orgId=2&from=1647207099426&to=1647293499426
 :url-dash-1: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/Wr6huVE7z/historic-air-quality-data-beijin-aotizhongxin-all-metrics?orgId=2&from=1356994800000&to=1483225200000
