@@ -73,7 +73,6 @@ image::{image-url-ironhack}[width=70]
 
 
 
-
 == About the project
 
 In this project I am going to build a platform which will handle time series data (metrics and events) from IoT devices, store them on a database and visualize the historical and live data on a dashboard, creating a dataset from data pulled from an API.
