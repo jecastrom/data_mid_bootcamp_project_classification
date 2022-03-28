@@ -3,7 +3,7 @@
 :linkcss: boot-darkly.css
 :image-url-ironhack: https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png
 :my-name: Jorge Castro DAPT NOV2021
-:description:
+:description: Build and deploy a Data Ingestion Pipeline (Pull)
 //:fn-xxx: Add the explanation foot note here bla bla
 :url-dash-3: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/HYlvKIEnz/air-pollutants-concentration-levels-hourly-last-24h-berlin-germany?orgId=2&from=1647207099426&to=1647293499426
 :url-dash-1: http://ec2-3-120-10-156.eu-central-1.compute.amazonaws.com:3000/d/Wr6huVE7z/historic-air-quality-data-beijin-aotizhongxin-all-metrics?orgId=2&from=1356994800000&to=1483225200000
@@ -17,7 +17,7 @@
 :url-query: https://github.com/jecastrom/time_series_pro/blob/master/files_for_project/PRSA_Data_20130301-20170228/02_query.ipynb
 :url-live: https://github.com/jecastrom/time_series_pro/blob/master/files_for_project/PRSA_Data_20130301-20170228/03_live_data_weather_api_V2.ipynb
 :toc:
-:toc-title: Build and deploy a Data Ingestion Pipeline Pull
+:toc-title: 
 :toc-placement!:
 :toclevels: 5
 ifdef::env-github[]
@@ -74,6 +74,8 @@ image::{image-url-ironhack}[width=70]
 
 
 
-== Abount the project
+== About the project
 
-Build a platform to handle time series data (metrics and events) from IoT devices, store them on a database and visualize it on a dashboard, creating a dataset from data pulled from an API.
+In this project I am going to build a platform which will handle time series data (metrics and events) from IoT devices, store them on a database and visualize the historical and live data on a dashboard, creating a dataset from data pulled from an API.
+
+To read the detailed step-by-step of my project, go to the Wiki section at the top of this page.
