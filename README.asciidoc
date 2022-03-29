@@ -78,3 +78,5 @@ image::{image-url-ironhack}[width=70]
 In this project I am going to build a platform which will handle time series data (metrics and events) from IoT devices, store them on a database and visualize the historical and live data on a dashboard, creating a dataset from data pulled from an API.
 
 To read the detailed step-by-step of my project, go to the https://github.com/jecastrom/data_mid_bootcamp_project_etl_pipeline_timeseries/wiki[`Wiki`] section at the top of this page.
+
+
